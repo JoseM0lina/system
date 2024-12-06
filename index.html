@@ -1,0 +1,1234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/8603/8603086.png" type="image/png">
+  <title>ViveEcuador</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="author" content="José Marin">
+  <meta name="keywords" content="turismo,marketing,Ecuador">
+  <meta name="description" content="Bootstrap 5 Fashion Store HTML CSS Template">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/vendor.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Marcellus&display=swap"
+    rel="stylesheet">
+</head>
+
+<body class="homepage">
+  <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <defs>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="instagram" viewBox="0 0 15 15">
+        <path fill="none" stroke="currentColor"
+          d="M11 3.5h1M4.5.5h6a4 4 0 0 1 4 4v6a4 4 0 0 1-4 4h-6a4 4 0 0 1-4-4v-6a4 4 0 0 1 4-4Zm3 10a3 3 0 1 1 0-6a3 3 0 0 1 0 6Z" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="facebook" viewBox="0 0 15 15">
+        <path fill="none" stroke="currentColor"
+          d="M7.5 14.5a7 7 0 1 1 0-14a7 7 0 0 1 0 14Zm0 0v-8a2 2 0 0 1 2-2h.5m-5 4h5" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="twitter" viewBox="0 0 15 15">
+        <path fill="currentColor"
+          d="m14.478 1.5l.5-.033a.5.5 0 0 0-.871-.301l.371.334Zm-.498 2.959a.5.5 0 1 0-1 0h1Zm-6.49.082h-.5h.5Zm0 .959h.5h-.5Zm-6.99 7V12a.5.5 0 0 0-.278.916L.5 12.5Zm.998-11l.469-.175a.5.5 0 0 0-.916-.048l.447.223Zm3.994 9l.354.353a.5.5 0 0 0-.195-.827l-.159.474Zm7.224-8.027l-.37.336l.18.199l.265-.04l-.075-.495Zm1.264-.94c.051.778.003 1.25-.123 1.606c-.122.345-.336.629-.723 1l.692.722c.438-.42.776-.832.974-1.388c.193-.546.232-1.178.177-2.006l-.998.066Zm0 3.654V4.46h-1v.728h1Zm-6.99-.646V5.5h1v-.959h-1Zm0 .959V6h1v-.5h-1ZM10.525 1a3.539 3.539 0 0 0-3.537 3.541h1A2.539 2.539 0 0 1 10.526 2V1Zm2.454 4.187C12.98 9.503 9.487 13 5.18 13v1c4.86 0 8.8-3.946 8.8-8.813h-1ZM1.03 1.675C1.574 3.127 3.614 6 7.49 6V5C4.174 5 2.421 2.54 1.966 1.325l-.937.35Zm.021-.398C.004 3.373-.157 5.407.604 7.139c.759 1.727 2.392 3.055 4.73 3.835l.317-.948c-2.155-.72-3.518-1.892-4.132-3.29c-.612-1.393-.523-3.11.427-5.013l-.895-.446Zm4.087 8.87C4.536 10.75 2.726 12 .5 12v1c2.566 0 4.617-1.416 5.346-2.147l-.708-.706Zm7.949-8.009A3.445 3.445 0 0 0 10.526 1v1c.721 0 1.37.311 1.82.809l.74-.671Zm-.296.83a3.513 3.513 0 0 0 2.06-1.134l-.744-.668a2.514 2.514 0 0 1-1.466.813l.15.989ZM.222 12.916C1.863 14.01 3.583 14 5.18 14v-1c-1.63 0-3.048-.011-4.402-.916l-.556.832Z" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="pinterest" viewBox="0 0 15 15">
+        <path fill="none" stroke="currentColor"
+          d="m4.5 13.5l3-7m-3.236 3a2.989 2.989 0 0 1-.764-2V7A3.5 3.5 0 0 1 7 3.5h1A3.5 3.5 0 0 1 11.5 7v.5a3 3 0 0 1-3 3a2.081 2.081 0 0 1-1.974-1.423L6.5 9m1 5.5a7 7 0 1 1 0-14a7 7 0 0 1 0 14Z" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="youtube" viewBox="0 0 15 15">
+        <path fill="currentColor"
+          d="m1.61 12.738l-.104.489l.105-.489Zm11.78 0l.104.489l-.105-.489Zm0-10.476l.104-.489l-.105.489Zm-11.78 0l.106.489l-.105-.489ZM6.5 5.5l.277-.416A.5.5 0 0 0 6 5.5h.5Zm0 4H6a.5.5 0 0 0 .777.416L6.5 9.5Zm3-2l.277.416a.5.5 0 0 0 0-.832L9.5 7.5ZM0 3.636v7.728h1V3.636H0Zm15 7.728V3.636h-1v7.728h1ZM1.506 13.227c3.951.847 8.037.847 11.988 0l-.21-.978a27.605 27.605 0 0 1-11.568 0l-.21.978ZM13.494 1.773a28.606 28.606 0 0 0-11.988 0l.21.978a27.607 27.607 0 0 1 11.568 0l.21-.978ZM15 3.636c0-.898-.628-1.675-1.506-1.863l-.21.978c.418.09.716.458.716.885h1Zm-1 7.728a.905.905 0 0 1-.716.885l.21.978A1.905 1.905 0 0 0 15 11.364h-1Zm-14 0c0 .898.628 1.675 1.506 1.863l.21-.978A.905.905 0 0 1 1 11.364H0Zm1-7.728c0-.427.298-.796.716-.885l-.21-.978A1.905 1.905 0 0 0 0 3.636h1ZM6 5.5v4h1v-4H6Zm.777 4.416l3-2l-.554-.832l-3 2l.554.832Zm3-2.832l-3-2l-.554.832l3 2l.554-.832Z" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="dribble" viewBox="0 0 15 15">
+        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+          d="M4.839 1.024c3.346 4.041 5.096 7.922 5.704 12.782M.533 6.82c5.985-.138 9.402-1.083 11.97-4.216M2.7 12.594c3.221-4.902 7.171-5.65 11.755-4.293M14.5 7.5a7 7 0 1 0-14 0a7 7 0 0 0 14 0Z" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="arrow-cycle" viewBox="0 0 24 24">
+        <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+          <path
+            d="M22 12c0 6-4.39 10-9.806 10C7.792 22 4.24 19.665 3 16m-1-4C2 6 6.39 2 11.806 2C16.209 2 19.76 4.335 21 8" />
+          <path d="m7 17l-4-1l-1 4M17 7l4 1l1-4" />
+        </g>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="heart" viewBox="0 0 24 24">
+        <path fill="currentColor"
+          d="M20.16 4.61A6.27 6.27 0 0 0 12 4a6.27 6.27 0 0 0-8.16 9.48l7.45 7.45a1 1 0 0 0 1.42 0l7.45-7.45a6.27 6.27 0 0 0 0-8.87Zm-1.41 7.46L12 18.81l-6.75-6.74a4.28 4.28 0 0 1 3-7.3a4.25 4.25 0 0 1 3 1.25a1 1 0 0 0 1.42 0a4.27 4.27 0 0 1 6 6.05Z" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="link" viewBox="0 0 24 24">
+        <path fill="currentColor"
+          d="M12 19a1 1 0 1 0-1-1a1 1 0 0 0 1 1Zm5 0a1 1 0 1 0-1-1a1 1 0 0 0 1 1Zm0-4a1 1 0 1 0-1-1a1 1 0 0 0 1 1Zm-5 0a1 1 0 1 0-1-1a1 1 0 0 0 1 1Zm7-12h-1V2a1 1 0 0 0-2 0v1H8V2a1 1 0 0 0-2 0v1H5a3 3 0 0 0-3 3v14a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V6a3 3 0 0 0-3-3Zm1 17a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-9h16Zm0-11H4V6a1 1 0 0 1 1-1h1v1a1 1 0 0 0 2 0V5h8v1a1 1 0 0 0 2 0V5h1a1 1 0 0 1 1 1ZM7 15a1 1 0 1 0-1-1a1 1 0 0 0 1 1Zm0 4a1 1 0 1 0-1-1a1 1 0 0 0 1 1Z" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="arrow-left" viewBox="0 0 24 24">
+        <path fill="currentColor"
+          d="M17 11H9.41l3.3-3.29a1 1 0 1 0-1.42-1.42l-5 5a1 1 0 0 0-.21.33a1 1 0 0 0 0 .76a1 1 0 0 0 .21.33l5 5a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.42L9.41 13H17a1 1 0 0 0 0-2Z" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="arrow-right" viewBox="0 0 24 24">
+        <path fill="currentColor"
+          d="M17.92 11.62a1 1 0 0 0-.21-.33l-5-5a1 1 0 0 0-1.42 1.42l3.3 3.29H7a1 1 0 0 0 0 2h7.59l-3.3 3.29a1 1 0 0 0 0 1.42a1 1 0 0 0 1.42 0l5-5a1 1 0 0 0 .21-.33a1 1 0 0 0 0-.76Z" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="play" viewBox="0 0 24 24">
+        <g fill="none" fill-rule="evenodd">
+          <path
+            d="M24 0v24H0V0h24ZM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018Zm.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01l-.184-.092Z" />
+          <path fill="currentColor"
+            d="M5.669 4.76a1.469 1.469 0 0 1 2.04-1.177c1.062.454 3.442 1.533 6.462 3.276c3.021 1.744 5.146 3.267 6.069 3.958c.788.591.79 1.763.001 2.356c-.914.687-3.013 2.19-6.07 3.956c-3.06 1.766-5.412 2.832-6.464 3.28c-.906.387-1.92-.2-2.038-1.177c-.138-1.142-.396-3.735-.396-7.237c0-3.5.257-6.092.396-7.235Z" />
+        </g>
+      </symbol>
+    </defs>
+  </svg>
+
+
+  <nav class="navbar navbar-expand-lg bg-dark text-uppercase fs-6 p-3 border-bottom align-items-center">
+    <div class="container-fluid">
+      <div class="row justify-content-between align-items-center w-100">
+        <div class="col-auto">
+          <a class="navbar-brand text-white" href="index.html">
+            Gestify
+          </a>
+        </div>
+        <div class="col-auto">
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 gap-1 gap-md-5 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="#inicio">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <!-- <a class="nav-link text-light" href="#descubre">Descubre</a> -->
+                  <a class="nav-link text-light" href="#caracteristica">Caracteristica</a>
+                </li>
+                <li class="nav-item">
+                  <!-- <a class="nav-link text-light" href="#tradiciones">Tradiciones</a> -->
+                  <a class="nav-link text-light" href="#beneficios">Beneficios</a>
+                </li>
+                <li class="nav-item">
+                  <!-- <a class="nav-link text-light" href="#sabores">Sabores</a> -->
+                  <a class="nav-link text-light" href="#planes">Planes</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="#interes">Interés</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="#resena">Reseña</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="#demo">Demo</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </nav>
+
+  <section id="inicio" class="collection bg-light py-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <h1 class="section-title text-center text-black mt-4" data-aos="fade-up">¡Comercio  eficiente, gestión inteligente!</h1>
+        <div class="col-md-6 text-center" data-aos="fade-up" data-aos-delay="300">
+          <p>¿Cansado de perder tiempo en registros interminables y sufrir por valores erróneos en tu inventario? Nuestro sistema te permite actualizar datos al instante, registrar múltiples productos en segundos y tomar decisiones basadas en información precisa. Además, visualiza el estado financiero de tu negocio con gráficos interactivos en un dashboard intuitivo que centraliza toda tu información.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="swiper main-swiper py-4 overflow-hidden" data-aos="fade-up" data-aos-delay="600">
+          <div class="swiper-wrapper d-flex border-animation-left">
+            <div class="swiper-slide">
+              <div class="banner-item image-zoom-effect">
+                <div class="image-holder">
+                  <a href="#">
+                    <img id="region"
+                      src="https://tagger.shop/cdn/shop/articles/inventarios-automatizados_1024x1024.jpg?v=1506268454"
+                      alt="product" class="img-fluid">
+                  </a>
+                </div>
+                <div class="banner-content py-4">
+                  <h5 class="element-title text-uppercase text-black">
+                    <a href="index.html" class="item-anchor">Registro de productos</a>
+                  </h5>
+                  <p>Imagina que acabas de recibir un nuevo lote de mercancía. En lugar de perder tiempo anotando cada detalle en una hoja o archivo desorganizado, simplemente ingresas los datos al sistema y listo. Todo queda registrado de forma rápida y ordenada.</p>
+                  <div class="btn-left">
+                    <a href="#" class="btn btn-primary fs-6 text-uppercase item-anchor text-decoration-none"
+                      id="selectButton">Votar</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="banner-item image-zoom-effect">
+                <div class="image-holder">
+                  <a href="#">
+                    <img id="region" src="https://cdn.shopify.com/s/files/1/2217/4635/files/inventarios.jpg?v=1506268416" alt="product"
+                      class="img-fluid">
+                  </a>
+                </div>
+                <div class="banner-content py-4">
+                  <h5 class="element-title text-uppercase text-black">
+                    <a href="index.html" class="item-anchor">Inventariado</a>
+                  </h5>
+                  <p>Con el paso del tiempo, sabes que es fácil perder el control de lo que tienes en stock. Gestify te permite ver cuántos productos quedan, cuáles se están acabando y cuáles llevan mucho tiempo sin venderse, ayudándote a mantener todo bajo control.</p>
+                  <div class="btn-left">
+                    <a href="#" class="btn btn-primary fs-6 text-uppercase item-anchor text-decoration-none"
+                      id="selectButton">Votar</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="banner-item image-zoom-effect">
+                <div class="image-holder">
+                  <a href="#">
+                    <img id="region" src="https://www.bbva.com/wp-content/uploads/2022/06/BBVA-finanzas-personales-y-corporativas.jpg"
+                      alt="product" class="img-fluid">
+                  </a>
+                </div>
+                <div class="banner-content py-4">
+                  <h5 class="element-title text-uppercase text-black">
+                    <a href="index.html" class="item-anchor">Toma de decisiones</a>
+                  </h5>
+                  <p>Al tener toda la información al día, los datos pueden ser usados para hacer crecer al negocio. Si un producto se vende mucho, se pide más antes de que se agote. O si otro no se está moviendo, se puede hacer una promoción.</p>
+                  <div class="btn-left">
+                    <a href="#" class="btn btn-primary fs-6 text-uppercase item-anchor text-decoration-none"
+                      id="selectButton">Votar</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="banner-item image-zoom-effect">
+                <div class="image-holder">
+                  <a href="#">
+                    <img id="region" src="https://thelogisticsworld.com/wp-content/uploads/2020/09/proveedores-e1663621176409.jpeg"
+                      alt="product" class="img-fluid">
+                  </a>
+                </div>
+                <div class="banner-content py-4">
+                  <h5 class="element-title text-uppercase text-black">
+                    <a href="index.html" class="item-anchor">Relación con proveedores</a>
+                  </h5>
+                  <p>Cuando necesitas reabastecer, no tienes que buscar números o calcular cantidades manualmente. Gestify te brinda estos datos sobre los productos para que puedas generar las órdenes de compra para tus proveedores.</p>
+                  <div class="btn-left">
+                    <a href="#" class="btn btn-primary fs-6 text-uppercase item-anchor text-decoration-none"
+                      id="selectButton">Votar</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class="icon-arrow icon-arrow-left"><svg width="50" height="50" viewBox="0 0 24 24">
+            <use xlink:href="#arrow-left"></use>
+          </svg></div>
+        <div class="icon-arrow icon-arrow-right"><svg width="50" height="50" viewBox="0 0 24 24">
+            <use xlink:href="#arrow-right"></use>
+          </svg></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="descubre" class="container py-5">
+    <div class="row h-100">
+      <div class="col-md-8 d-flex flex-column">
+        <div class="row justify-content-center">
+          <h3 class="section-title text-center text-uppercase text-black mt-5 py-1" data-aos="fade-up">Destinos mágicos</h3>
+        </div>
+        <div id="carouselExample" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="mainImage d-block w-100 rounded-3 shadow-lg"
+                src="https://www.quito-turismo.gob.ec/wp-content/uploads/2024/07/Quito-Crecimiento-Sostenible-scaled.jpg"
+                alt="Imagen 1" height="575">
+              <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 pt-2 pb-2 rounded-3 w-100"
+                style="z-index: 1; bottom: 0; left: 0; text-align: left; padding-left: 20px;">
+                <h5 class="display-5 text-light">Quito</h5>
+              </div>
+              <div class="d-flex justify-content-end position-absolute bottom-0 end-0 p-3" style="z-index: 2;">
+                <img
+                  src="https://www.quito-turismo.gob.ec/wp-content/uploads/2024/07/Quito-Crecimiento-Sostenible-scaled.jpg"
+                  class="img-thumbnail mx-1" alt="Miniatura 1" style="width: 80px; height: 50px;"
+                  onclick="changeImage(this)">
+                <img src="https://www.chrisandchrisbreakfree.com/wp-content/uploads/2011/09/EquatorPark.jpg"
+                  class="img-thumbnail mx-1" alt="Miniatura 2" style="width: 80px; height: 50px;"
+                  onclick="changeImage(this)">
+                <img src="https://www.quito-turismo.gob.ec/wp-content/uploads/2023/09/mundialdeturismo-scaled.jpg"
+                  class="img-thumbnail mx-1" alt="Miniatura 3" style="width: 80px; height: 50px;"
+                  onclick="changeImage(this)">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="mainImage d-block w-100 rounded-3 shadow-lg"
+                src="https://irp.cdn-website.com/23be95e4/dms3rep/multi/Imagen+1-b5e9bd4b.png" alt="Imagen 2"
+                height="575">
+              <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 pt-2 pb-2 rounded-3 w-100"
+                style="z-index: 1; bottom: 0; left: 0; text-align: left; padding-left: 20px;">
+                <h5 class="display-5 text-light">Cuenca</h5>
+              </div>
+              <div class="d-flex justify-content-end position-absolute bottom-0 end-0 p-3" style="z-index: 2;">
+                <img src="https://irp.cdn-website.com/23be95e4/dms3rep/multi/Imagen+1-b5e9bd4b.png"
+                  class="img-thumbnail mx-1" alt="Miniatura 1" style="width: 80px; height: 50px;"
+                  onclick="changeImage(this)">
+                <img
+                  src="https://www.metropolitan-touring.com/wp-content/uploads/2022/09/inmaculada-concepcion-cathedral.jpg"
+                  class="img-thumbnail mx-1" alt="Miniatura 2" style="width: 80px; height: 50px;"
+                  onclick="changeImage(this)">
+                <img src="https://tranvias.de/wp-content/uploads/2022/10/tranvia-de-cuenca-ecuador.jpg"
+                  class="img-thumbnail mx-1" alt="Miniatura 3" style="width: 80px; height: 50px;"
+                  onclick="changeImage(this)">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="mainImage d-block w-100 rounded-3 shadow-lg"
+                src="https://www.turismo.gob.ec/wp-content/uploads/2016/07/Copia-de-Copia-de-GUAYAQUIL-GUAYAS3.jpg"
+                alt="Imagen 3" height="575">
+              <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 pt-2 pb-2 rounded-3 w-100"
+                style="z-index: 1; bottom: 0; left: 0; text-align: left; padding-left: 20px;">
+                <h5 class="display-5 text-light">Guayaquil</h5>
+              </div>
+              <div class="d-flex justify-content-end position-absolute bottom-0 end-0 p-3" style="z-index: 2;">
+                <img src="https://www.turismo.gob.ec/wp-content/uploads/2016/07/Copia-de-Copia-de-GUAYAQUIL-GUAYAS3.jpg"
+                  class="img-thumbnail mx-1" alt="Miniatura 1" style="width: 80px; height: 50px;"
+                  onclick="changeImage(this)">
+                <img src="https://www.imagineecuador.com/wp-content/uploads/2021/10/Recurso-87-11-e1637272775492.png"
+                  class="img-thumbnail mx-1" alt="Miniatura 2" style="width: 80px; height: 50px;"
+                  onclick="changeImage(this)">
+                <img
+                  src="https://i0.wp.com/trailforthjournal.com/es/wp-content/uploads/sites/4/2024/07/wp-17203020786331916779417640204164.jpg?fit=2000%2C1332&ssl=1"
+                  class="img-thumbnail mx-1" alt="Miniatura 3" style="width: 80px; height: 50px;"
+                  onclick="changeImage(this)">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="mainImage d-block w-100 rounded-3 shadow-lg"
+                src="https://www.tungurahua.gob.ec/file/2024/03/Banos-10.jpg" alt="Imagen 4" height="575">
+              <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 pt-2 pb-2 rounded-3 w-100"
+                style="z-index: 1; bottom: 0; left: 0; text-align: left; padding-left: 20px;">
+                <h5 class="display-5 text-light">Baños de Agua Santa</h5>
+              </div>
+              <div class="d-flex justify-content-end position-absolute bottom-0 end-0 p-3" style="z-index: 2;">
+                <img src="https://www.tungurahua.gob.ec/file/2024/03/Banos-10.jpg" class="img-thumbnail mx-1"
+                  alt="Miniatura 1" style="width: 80px; height: 50px;" onclick="changeImage(this)">
+                <img
+                  src="https://www.sisepuedeecuador.com/wp-content/uploads/2020/09/Banos-de-Agua-Santa-Ecuador-Pailon-del-Diablo.jpg"
+                  class="img-thumbnail mx-1" alt="Miniatura 2" style="width: 80px; height: 50px;"
+                  onclick="changeImage(this)">
+                <img
+                  src="https://images.squarespace-cdn.com/content/v1/642c1d5a227d62555176db53/1724858613082-3WXG3CFGP7SEQ926QZYE/El+Vuelo+del+Co%CC%81ndor+y+Las+Manos+de+la+Pachamama+-+Banos+de+Agua+Santa+-+Ecuador.jpg"
+                  class="img-thumbnail mx-1" alt="Miniatura 3" style="width: 80px; height: 50px;"
+                  onclick="changeImage(this)">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="mainImage d-block w-100 rounded-3 shadow-lg"
+                src="https://ecuadors.live/wp-content/uploads/2022/03/Canton-Milagro-turismo-en-ecuador-ecuador-turismo-Milagro-Ecuador-Lives.jpg"
+                alt="Imagen 6" height="575">
+              <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 pt-2 pb-2 rounded-3 w-100"
+                style="z-index: 1; bottom: 0; left: 0; text-align: left; padding-left: 20px;">
+                <h5 class="display-5 text-light">Milagro</h5>
+              </div>
+              <div class="d-flex justify-content-end position-absolute bottom-0 end-0 p-3" style="z-index: 2;">
+                <img
+                  src="https://ecuadors.live/wp-content/uploads/2022/03/Canton-Milagro-turismo-en-ecuador-ecuador-turismo-Milagro-Ecuador-Lives.jpg"
+                  class="img-thumbnail mx-1" alt="Miniatura 1" style="width: 80px; height: 50px;"
+                  onclick="changeImage(this)">
+                <img
+                  src="https://ameguayas.gob.ec/wp-content/gallery/canton-milagro-sitios-turisticos/MONUMENTO-GUITARRA.jpg"
+                  class="img-thumbnail mx-1" alt="Miniatura 2" style="width: 80px; height: 50px;"
+                  onclick="changeImage(this)">
+                <img
+                  src="https://cloudfront-us-east-1.images.arcpublishing.com/eluniverso/LTKVWAQOPBGCJFZDZBZ57TD3PU.jpg"
+                  class="img-thumbnail mx-1" alt="Miniatura 3" style="width: 80px; height: 50px;"
+                  onclick="changeImage(this)">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="mainImage d-block w-100 rounded-3 shadow-lg"
+                src="https://www.viajaecuador.com.ec/wp-content/uploads/2020/12/AR-PC-AMAZONIA-NAPO-TENA-DEPORTES-RAFTING-019.jpg"
+                alt="Imagen 7" height="575">
+              <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 pt-2 pb-2 rounded-3 w-100"
+                style="z-index: 1; bottom: 0; left: 0; text-align: left; padding-left: 20px;">
+                <h5 class="display-5 text-light">Tena</h5>
+              </div>
+              <div class="d-flex justify-content-end position-absolute bottom-0 end-0 p-3" style="z-index: 2;">
+                <img
+                  src="https://www.viajaecuador.com.ec/wp-content/uploads/2020/12/AR-PC-AMAZONIA-NAPO-TENA-DEPORTES-RAFTING-019.jpg"
+                  class="img-thumbnail mx-1" alt="Miniatura 1" style="width: 80px; height: 50px;"
+                  onclick="changeImage(this)">
+                <img src="https://happygringo.com/wp-content/uploads/2021/08/activities-in-tena.jpg"
+                  class="img-thumbnail mx-1" alt="Miniatura 2" style="width: 80px; height: 50px;"
+                  onclick="changeImage(this)">
+                <img src="https://www.imagineecuador.com/wp-content/uploads/2021/11/Yacuma-Ecolodge-PORTADA-MENU.png"
+                  class="img-thumbnail mx-1" alt="Miniatura 3" style="width: 80px; height: 50px;"
+                  onclick="changeImage(this)">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="mainImage d-block w-100 rounded-3 shadow-lg"
+                src="https://www.metrojourneys.com/wp-content/uploads/2018/12/punta-suarez-espanola-galapagos-marine-iguana.webp"
+                alt="Imagen 5" height="575">
+              <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 pt-2 pb-2 rounded-3 w-100"
+                style="z-index: 1; bottom: 0; left: 0; text-align: left; padding-left: 20px;">
+                <h5 class="display-5 text-light">Islas Galápagos</h5>
+              </div>
+              <div class="d-flex justify-content-end position-absolute bottom-0 end-0 p-3" style="z-index: 2;">
+                <img
+                  src="https://www.metrojourneys.com/wp-content/uploads/2018/12/punta-suarez-espanola-galapagos-marine-iguana.webp"
+                  class="img-thumbnail mx-1" alt="Miniatura 1" style="width: 80px; height: 50px;"
+                  onclick="changeImage(this)">
+                <img
+                  src="https://quitotourbus.com/wp-content/uploads/2022/12/Que-hacer-en-la-Isla-Santa-Cruz-Estacion-Charles-Darwin.jpg"
+                  class="img-thumbnail mx-1" alt="Miniatura 2" style="width: 80px; height: 50px;"
+                  onclick="changeImage(this)">
+                <img
+                  src="https://i0.wp.com/www.chokotrip.info/wp-content/uploads/2024/04/Piqueros-de-patas-azule-pescando-en-la-playa-de-Isabela.jpg?resize=1127%2C882&ssl=1"
+                  class="img-thumbnail mx-1" alt="Miniatura 3" style="width: 80px; height: 50px;"
+                  onclick="changeImage(this)">
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="col-md-4 d-flex flex-column justify-content-between">
+        <div class="row mb-3 pt-4">
+          <div class="col-md-12 text-center border-bottom mb-3" data-aos="fade-in" data-aos-delay="0">
+            <div class="py-1">
+              <img src="https://i.pinimg.com/564x/1d/e1/9f/1de19f4e1265726e90820365aef65911.jpg" width="84" height="74"
+                alt="Icono de moneda">
+              <h4 class="element-title text-capitalize my-3">Asequible</h4>
+              <p>Un sistema accesible, con planes ajustados a tus necesidades y presupuesto.</p>
+            </div>
+          </div>
+          <div class="col-md-12 text-center border-bottom mb-3" data-aos="fade-in" data-aos-delay="300">
+            <div class="py-1">
+              <img src="https://cdn-icons-png.flaticon.com/512/12299/12299094.png" width="74"
+                height="74" alt="Icono de seguro">
+              <h4 class="element-title text-capitalize my-3">Seguro</h4>
+              <p>Datos protegidos con autenticación multifactor (MFA), cifrado avanzado y control de acceso por roles. Constantemente actualizado para garantizar la seguridad.</p>
+            </div>
+          </div>
+          <div class="col-md-12 text-center mb-3" data-aos="fade-in" data-aos-delay="600">
+            <div class="py-1">
+              <img src="https://cdn-icons-png.flaticon.com/512/5930/5930435.png" width="58" height="58"
+                alt="Icono de Idioma">
+              <h4 class="element-title text-capitalize my-3">Intuitivo</h4>
+              <p>Un sistema simple y directo, pensado para que puedas gestionar tu negocio sin complicaciones, incluso si no eres experto en tecnología.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="tradiciones" class="new-arrival product-carousel py-5 position-relative overflow-hidden">
+    <div class="container">
+      <div class="d-flex flex-wrap justify-content-between align-items-center mt-5 mb-3">
+        <h4 class="text-uppercase">Fiestas culturales</h4>
+        <a href="index.html" class="btn-link">Ver todas las fiestas</a>
+      </div>
+      <div class="swiper product-swiper open-up" data-aos="zoom-out">
+        <div class="swiper-wrapper d-flex">
+          <div class="swiper-slide">
+            <div class="product-item image-zoom-effect link-effect">
+              <div class="image-holder position-relative">
+                <a href="index.html">
+                  <img
+                    src="https://efecomunica.efe.com/wp-content/uploads/2024/06/rss-efe82f07ef00110017eb690fd6982acdeb17897e222w.jpg"
+                    alt="categories" class="product-image img-fluid">
+                </a>
+                <a href="index.html" class="btn-icon btn-wishlist">
+                  <svg width="24" height="24" viewBox="0 0 24 24">
+                    <use xlink:href="#heart"></use>
+                  </svg>
+                </a>
+                <div class="product-content">
+                  <h5 class="element-title text-uppercase fs-5 mt-3">
+                    <a href="index.html">Inti Raymi</a>
+                  </h5>
+                  <a href="#" class="text-decoration-none" data-after="Votar"><span>Se celebra en la Sierra en el mes de
+                      Junio</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="product-item image-zoom-effect link-effect">
+              <div class="image-holder position-relative">
+                <a href="index.html">
+                  <img src="https://www.cacpeco.com/wp-content/uploads/2024/09/Mama-Negra-2-1080x675.png"
+                    alt="categories" class="product-image img-fluid">
+                </a>
+                <a href="index.html" class="btn-icon btn-wishlist">
+                  <svg width="24" height="24" viewBox="0 0 24 24">
+                    <use xlink:href="#heart"></use>
+                  </svg>
+                </a>
+                <div class="product-content">
+                  <h5 class="text-uppercase fs-5 mt-3">
+                    <a href="index.html">La Mama Negra</a>
+                  </h5>
+                  <a href="#" class="text-decoration-none" data-after="Votar"><span>Se celebra en Latacunga en el mes de
+                      Septiembre o Noviembre</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="product-item image-zoom-effect link-effect">
+              <div class="image-holder position-relative">
+                <a href="index.html">
+                  <img src="https://img.goraymi.com/2019/03/11/91cbd3ef2f3c3fcf5fa2dfb7d66e1aa6_xl.jpg" alt="categories"
+                    class="product-image img-fluid">
+                </a>
+                <a href="index.html" class="btn-icon btn-wishlist">
+                  <svg width="24" height="24" viewBox="0 0 24 24">
+                    <use xlink:href="#heart"></use>
+                  </svg>
+                </a>
+                <div class="product-content">
+                  <h5 class="text-uppercase fs-5 mt-3">
+                    <a href="index.html">Semana Santa</a>
+                  </h5>
+                  <a href="#" class="text-decoration-none" data-after="Votar"><span>Se celebra a nivel nacional en el
+                      mes de Marzo o Abril</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="product-item image-zoom-effect link-effect">
+              <div class="image-holder position-relative">
+                <a href="index.html">
+                  <img src="https://www.quitoinforma.gob.ec/wp-content/uploads/2022/11/Cementerios-DMQ.jpg"
+                    alt="categories" class="product-image img-fluid">
+                </a>
+                <a href="index.html" class="btn-icon btn-wishlist">
+                  <svg width="24" height="24" viewBox="0 0 24 24">
+                    <use xlink:href="#heart"></use>
+                  </svg>
+                </a>
+                <div class="product-content">
+                  <h5 class="text-uppercase fs-5 mt-3">
+                    <a href="index.html">Día de los Fieles Difuntos</a>
+                  </h5>
+                  <a href="#" class="text-decoration-none" data-after="Votar"><span>Se celebra a nivel nacional en el
+                      mes de Noviembre</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="product-item image-zoom-effect link-effect">
+              <div class="image-holder position-relative">
+                <a href="index.html">
+                  <img src="https://mundialmedios.com/wp-content/uploads/2024/02/carnaval-ecuador-mundial-medios-4.jpg"
+                    alt="categories" class="product-image img-fluid">
+                </a>
+                <a href="index.html" class="btn-icon btn-wishlist">
+                  <svg width="24" height="24" viewBox="0 0 24 24">
+                    <use xlink:href="#heart"></use>
+                  </svg>
+                </a>
+                <div class="product-content">
+                  <h5 class="text-uppercase fs-5 mt-3">
+                    <a href="index.html">Carnaval</a>
+                  </h5>
+                  <a href="#" class="text-decoration-none" data-after="Votar"><span>Se celebra a nivel nacional en el
+                      mes de Febrero o Marzo</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="product-item image-zoom-effect link-effect">
+              <div class="image-holder position-relative">
+                <a href="index.html">
+                  <img
+                    src="https://www.turismo.gob.ec/wp-content/uploads/2017/01/15844313_1834532826836070_8583441706239225080_o.jpg"
+                    alt="categories" class="product-image img-fluid">
+                </a>
+                <a href="index.html" class="btn-icon btn-wishlist">
+                  <svg width="24" height="24" viewBox="0 0 24 24">
+                    <use xlink:href="#heart"></use>
+                  </svg>
+                </a>
+                <div class="product-content">
+                  <h5 class="text-uppercase fs-5 mt-3">
+                    <a href="index.html">Diablada de Píllaro</a>
+                  </h5>
+                  <a href="#" class="text-decoration-none" data-after="Add to cart"><span>Se celebra en Tungurahua en el
+                      mes de Enero</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <div class="icon-arrow icon-arrow-left"><svg width="50" height="50" viewBox="0 0 24 24">
+          <use xlink:href="#arrow-left"></use>
+        </svg></div>
+      <div class="icon-arrow icon-arrow-right"><svg width="50" height="50" viewBox="0 0 24 24">
+          <use xlink:href="#arrow-right"></use>
+        </svg></div>
+    </div>
+  </section>
+
+  <section class="collection bg-light position-relative py-5">
+    <div class="container">
+      <div class="row">
+        <div class="title-xlarge text-uppercase txt-fx domino">Collection</div>
+        <div class="collection-item d-flex flex-wrap my-5">
+          <div class="col-md-6 column-container">
+            <div class="image-holder">
+              <img src="https://live.staticflickr.com/8489/28703353683_d8984c9bdc_b.jpg" alt="collection" width="650px"
+                class="img-fluid">
+              <img src="https://www.travelandes.com/img/GalleryContent/112332/quito1.jpg" alt="collection" width="650px"
+                class="img-fluid">
+            </div>
+          </div>
+          <div class="col-md-6 column-container bg-white">
+            <div class="collection-content p-5 m-0">
+              <h3 class="element-title text-uppercase">Historia del Ecuador</h3>
+              <p>Ecuador, un pequeño pero fascinante país en la mitad del mundo, ofrece una rica historia que se
+                entrelaza con paisajes asombrosos. En tiempos antiguos, las civilizaciones Cañari y Quitu dejaron
+                huellas de su cultura, antes de que los Incas llegaran y convirtieran a Quito en una de sus ciudades más
+                importantes.</p>
+              <p>Con la llegada de los conquistadores españoles en el siglo XVI, Ecuador se unió al imperio español,
+                pero en 1822, después de luchas por la independencia, el país comenzó una nueva era, uniendo su destino
+                con la Gran Colombia bajo el liderazgo de Simón Bolívar. Sin embargo, en 1830, Ecuador se proclamó
+                independiente, estableciendo su propio camino como república.</p>
+              <p>Hoy en día, Ecuador es un lugar vibrante donde se fusionan las tradiciones indígenas, la historia
+                colonial y una diversidad cultural fascinante. Desde las alturas de los Andes hasta las playas del
+                Pacífico y las exóticas islas Galápagos, el país invita a explorar su historia, naturaleza y su gente
+                amable, ofreciendo una experiencia única para todo viajero.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="sabores" class="best-sellers product-carousel py-5 position-relative overflow-hidden">
+    <div class="container">
+      <div class="d-flex flex-wrap justify-content-between align-items-center mt-5 mb-3">
+        <h4 class="text-uppercase">Un deleite al paladar</h4>
+        <a href="index.html" class="btn-link">Ver todos los platos</a>
+      </div>
+      <div class="swiper product-swiper open-up" data-aos="zoom-out">
+        <div class="swiper-wrapper d-flex">
+          <div class="swiper-slide">
+            <div class="product-item image-zoom-effect link-effect">
+              <div class="image-holder">
+                <a href="index.html">
+                  <img src="https://i0.wp.com/recetaskwa.com/wp-content/uploads/2023/09/encebollado.jpg?ssl=1"
+                    alt="categories" class="product-image img-fluid">
+                </a>
+                <a href="index.html" class="btn-icon btn-wishlist">
+                  <svg width="24" height="24" viewBox="0 0 24 24">
+                    <use xlink:href="#heart"></use>
+                  </svg>
+                </a>
+                <div class="product-content">
+                  <div class="d-flex justify-content-between">
+                    <h5 class="text-uppercase fs-5 mt-3">
+                      <a href="index.html">Encebollado</a>
+                    </h5>
+                    <h5 class="mt-3">$2 - $5</h5>
+                  </div>
+                  <a href="index.html" class="text-decoration-none" data-after="Votar">
+                    <div class="row">
+                      <div class="col-6">
+                        <ul>
+                          <li><span>Albacora</span></li>
+                          <li><span>Yuca</span></li>
+                          <li><span>Limon</span></li>
+                        </ul>
+                      </div>
+                      <div class="col-6">
+                        <ul>
+                          <li>Cebolla</li>
+                          <li>Cilantro</li>
+                          <li>Tomate/Apio</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="product-item image-zoom-effect link-effect">
+              <div class="image-holder">
+                <a href="index.html">
+                  <img
+                    src="https://static.wixstatic.com/media/fc1233_ea382bec5b87448ab9a61bde1e61e0ec~mv2.png/v1/fill/w_568,h_568,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/fc1233_ea382bec5b87448ab9a61bde1e61e0ec~mv2.png"
+                    alt="product" class="product-image img-fluid">
+                </a>
+                <a href="index.html" class="btn-icon btn-wishlist">
+                  <svg width="24" height="24" viewBox="0 0 24 24">
+                    <use xlink:href="#heart"></use>
+                  </svg>
+                </a>
+                <div class="product-content">
+                  <div class="d-flex justify-content-between">
+                    <h5 class="text-uppercase fs-5 mt-3">
+                      <a href="index.html">Hornado</a>
+                    </h5>
+                    <h5 class="mt-3">$4 - $6</h5>
+                  </div>
+                  <a href="index.html" class="text-decoration-none" data-after="Votar">
+                    <div class="row">
+                      <div class="col-6">
+                        <ul>
+                          <li>Cerdo</li>
+                          <li>Papas</li>
+                          <li>Salsa criolla</li>
+                        </ul>
+                      </div>
+                      <div class="col-6">
+                        <ul>
+                          <li>Mote</li>
+                          <li>Aguacate</li>
+                          <li>Lechuga</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="product-item image-zoom-effect link-effect">
+              <div class="image-holder">
+                <a href="index.html">
+                  <img
+                    src="https://www.bonella.com.ec/-/media/Project/Upfield/Brands/Rama/Rama-EC/Assets/Recipes/sync-img/3900000c-8164-499b-a9d5-60d3a9119990.jpg?rev=da1f8b8aaba2450e942b9a642807626e"
+                    alt="categories" class="product-image img-fluid">
+                </a>
+                <a href="index.html" class="btn-icon btn-wishlist">
+                  <svg width="24" height="24" viewBox="0 0 24 24">
+                    <use xlink:href="#heart"></use>
+                  </svg>
+                </a>
+                <div class="product-content">
+                  <div class="d-flex justify-content-between">
+                    <h5 class="text-uppercase fs-5 mt-3">
+                      <a href="index.html">Yapingacho</a>
+                    </h5>
+                    <h5 class="mt-3">$3 - $5</h5>
+                  </div>
+                  <a href="index.html" class="text-decoration-none" data-after="Votar">
+                    <div class="row">
+                      <div class="col-6">
+                        <ul>
+                          <li>Huevo</li>
+                          <li>Papas</li>
+                          <li>Maní</li>
+                        </ul>
+                      </div>
+                      <div class="col-6">
+                        <ul>
+                          <li>Longaniza</li>
+                          <li>Maduro</li>
+                          <li>Lechuga/Salsa criolla</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="product-item image-zoom-effect link-effect">
+              <div class="image-holder">
+                <a href="index.html">
+                  <img
+                    src="https://www.bonella.com.ec/-/media/Project/Upfield/Brands/Rama/Rama-EC/Assets/Recipes/sync-img/aee6aa7f-26b7-4327-b78b-051d06a86f51.jpg?rev=a5e10720d9dc445e89d96b438da6eb0a&w=900"
+                    alt="categories" class="product-image img-fluid">
+                </a>
+                <a href="index.html" class="btn-icon btn-wishlist">
+                  <svg width="24" height="24" viewBox="0 0 24 24">
+                    <use xlink:href="#heart"></use>
+                  </svg>
+                </a>
+                <div class="product-content">
+                  <div class="d-flex justify-content-between">
+                    <h5 class="text-uppercase fs-5 mt-3">
+                      <a href="index.html">Tigrillo</a>
+                    </h5>
+                    <h5 class="mt-3">$3 - $5</h5>
+                  </div>
+                  <a href="index.html" class="text-decoration-none" data-after="Votar">
+                    <div class="row">
+                      <div class="col-6">
+                        <ul>
+                          <li>Platano verde</li>
+                          <li>Chicharrón</li>
+                          <li>Cebolla blanca/Ajo/Cilantro</li>
+                        </ul>
+                      </div>
+                      <div class="col-6">
+                        <ul>
+                          <li>Queso</li>
+                          <li>Huevo</li>
+                          <li>Tocino</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="product-item image-zoom-effect link-effect">
+              <div class="image-holder">
+                <a href="index.html">
+                  <img
+                    src="https://www.lahora.com.ec/wp-content/uploads/2023/03/plato-fanesca-economia-tradicion-ecuador.jpg"
+                    alt="categories" class="product-image img-fluid">
+                </a>
+                <a href="index.html" class="btn-icon btn-wishlist">
+                  <svg width="24" height="24" viewBox="0 0 24 24">
+                    <use xlink:href="#heart"></use>
+                  </svg>
+                </a>
+                <div class="product-content">
+                  <div class="d-flex justify-content-between">
+                    <h5 class="text-uppercase fs-5 mt-3">
+                      <a href="index.html">Fanesca</a>
+                    </h5>
+                    <h5 class="mt-3">$6 - $10</h5>
+                  </div>
+                  <a href="index.html" class="text-decoration-none" data-after="Votar">
+                    <div class="row">
+                      <div class="col-6">
+                        <ul>
+                          <li>12 granos</li>
+                          <li>Pescado salado</li>
+                          <li>Ajo/Cebolla/Cilantro</li>
+                        </ul>
+                      </div>
+                      <div class="col-6">
+                        <ul>
+                          <li>Huevo</li>
+                          <li>Leche</li>
+                          <li>Queso</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="product-item image-zoom-effect link-effect">
+              <div class="image-holder">
+                <a href="index.html">
+                  <img
+                    src="https://www.recetasnestle.com.ec/sites/default/files/srh_recipes/cda13d770e8135d603f5d37d1080c00f.jpg"
+                    alt="categories" class="product-image img-fluid">
+                </a>
+                <a href="index.html" class="btn-icon btn-wishlist">
+                  <svg width="24" height="24" viewBox="0 0 24 24">
+                    <use xlink:href="#heart"></use>
+                  </svg>
+                </a>
+                <div class="product-content">
+                  <div class="d-flex justify-content-between">
+                    <h5 class="text-uppercase fs-5 mt-3">
+                      <a href="index.html">Cazuela</a>
+                    </h5>
+                    <h5 class="mt-3">$4 - $7</h5>
+                  </div>
+                  <a href="index.html" class="text-decoration-none" data-after="Votar">
+                    <div class="row">
+                      <div class="col-6">
+                        <ul>
+                          <li>Marisco</li>
+                          <li>Maní</li>
+                          <li>Cebolla/Ajo/cilantro</li>
+                        </ul>
+                      </div>
+                      <div class="col-6">
+                        <ul>
+                          <li>Platano verde</li>
+                          <li>Tomate</li>
+                          <li>Pimiento</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <div class="icon-arrow icon-arrow-left"><svg width="50" height="50" viewBox="0 0 24 24">
+          <use xlink:href="#arrow-left"></use>
+        </svg></div>
+      <div class="icon-arrow icon-arrow-right"><svg width="50" height="50" viewBox="0 0 24 24">
+          <use xlink:href="#arrow-right"></use>
+        </svg></div>
+    </div>
+  </section>
+
+  <section class="video py-5 overflow-hidden">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="video-content open-up d-flex justify-content-center align-items-center position-relative"
+          data-aos="zoom-out" style="width: 100%; height: 500px;">
+          <div class="video-bg">
+            <img
+              src="https://assets.isu.pub/document-structure/221213061053-3c0ed1104b60290c061bc72b65bedc63/v1/e8fdc1f0ba60194d6c7928eb71b8edde.jpeg"
+              alt="video" class="video-image img-fluid" style="width: 100%; object-fit: cover;">
+          </div>
+          <div class="video-player position-absolute">
+            <a class="youtube" href="https://www.youtube.com/embed/YLK_HxMbcZ4"
+              style="display: flex; justify-content: center; align-items: center; width: 60px; height: 60px; background: rgba(0, 0, 0, 0.5); border-radius: 50%;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="#fff">
+                <use xlink:href="#play"></use>
+              </svg>
+              <img src="images/Logo-removebg-preview.png" alt="pattern" class="text-rotate">
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials py-5 bg-light">
+    <div class="section-header text-center mt-5">
+      <h4 class="text-uppercase">Descubre lo que los viajeros dicen sobre Ecuador</h2>
+    </div>
+    <div class="swiper testimonial-swiper overflow-hidden my-5">
+      <div class="swiper-wrapper d-flex">
+        <div class="swiper-slide">
+          <div class="testimonial-item text-center">
+            <blockquote>
+              <p>“Ecuador es un paraíso de contrastes, desde los Andes hasta las Galápagos.”</p>
+              <div class="review-title text-uppercase">María Fernanda</div>
+            </blockquote>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="testimonial-item text-center">
+            <blockquote>
+              <p>“Quito combina historia y modernidad como ningún otro lugar.”</p>
+              <div class="review-title text-uppercase">Carlos Javier</div>
+            </blockquote>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="testimonial-item text-center">
+            <blockquote>
+              <p>“La amabilidad de la gente ecuatoriana hizo mi viaje inolvidable.”</p>
+              <div class="review-title text-uppercase">Valeria Isabel</div>
+            </blockquote>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="testimonial-item text-center">
+            <blockquote>
+              <p>“Explorar el Amazonas en Ecuador es una experiencia única.”</p>
+              <div class="review-title text-uppercase">Gabriela Estefanía</div>
+            </blockquote>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="testimonial-item text-center">
+            <blockquote>
+              <p>“Cuenca tiene un encanto colonial que te transporta en el tiempo.”</p>
+              <div class="review-title text-uppercase">Mateo Alejandro</div>
+            </blockquote>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="testimonial-item text-center">
+            <blockquote>
+              <p>“No hay nada como probar un auténtico encebollado en la Costa.”</p>
+              <div class="review-title text-uppercase">José Miguel</div>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-swiper-pagination d-flex justify-content-center mb-5"></div>
+  </section>
+
+  <section id="interes">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8 py-5 my-5" style="background: url(images/fondoform.jpg) no-repeat;">
+          <div class="subscribe-header text-center pb-3">
+            <h3 class="section-title text-uppercase">Compártenos tu opinión</h3>
+          </div>
+          <form id="form" class="d-flex flex-wrap gap-3 p-3 border rounded">
+            <div class="form-group w-100">
+              <label for="form-email" class="form-label text-black bold-text">Tu dirección email</label>
+              <input id="form-email" type="email" name="email" placeholder="Your Email Address"
+                class="form-control form-control-lg" required>
+            </div>
+            <div class="form-group w-100">
+              <label for="option-1" class="form-label text-black bold-text">¿Cuál es la región que más interés te ha
+                generado?</label>
+              <select id="option-1" name="option1" class="form-select form-select-lg">
+                <option value="" disabled selected>Elige una opción</option>
+                <option value="Costa">Costa</option>
+                <option value="Sierra">Sierra</option>
+                <option value="Amazonía">Amazonía</option>
+                <option value="Insular">Insular</option>
+              </select>
+            </div>
+            <div class="form-group w-100">
+              <label for="option-2" class="form-label text-black bold-text">¿Qué festividad te gustaria
+                celebrar?</label>
+              <select id="option-2" name="option2" class="form-select form-select-lg">
+                <option value="" disabled selected>Elige una opción</option>
+                <option value="Inti Raymi">Inti Raymi</option>
+                <option value="La Mama Negra">La Mama Negra</option>
+                <option value="Semana Santa">Semana Santa</option>
+                <option value="Día de los Fieles Difuntos">Día de los Fieles Difuntos</option>
+                <option value="Carnaval">Carnaval</option>
+                <option value="Diablada del Pillaro">Diablada del Pillaro</option>
+              </select>
+            </div>
+            <div class="form-group w-100">
+              <label for="option-3" class="form-label text-black bold-text">¿Qué platillo desearías probar de nuestra
+                amplia gama?</label>
+              <select id="option-3" name="option3" class="form-select form-select-lg">
+                <option value="" disabled selected>Elige una opción</option>
+                <option value="Encebollado">Encebollado</option>
+                <option value="Hornado">Hornado</option>
+                <option value="Yapingacho">Yapingacho</option>
+                <option value="Tigrillo">Tigrillo</option>
+                <option value="Fanesca">Fanesca</option>
+                <option value="Cazuela">Cazuela</option>
+              </select>
+            </div>
+            <div class="form-group w-100">
+              <button id="form-submit" type="submit" class="btn btn-dark btn-lg text-uppercase w-100">Enviar</button>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-4 py-5 my-5">
+          <img
+            src="https://st.depositphotos.com/3283693/61504/i/450/depositphotos_615048000-stock-photo-soccer-fan-flag-his-country.jpg"
+            id="ecuatoriano" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="resena" class="bg-light py-5">
+    <div class="container">
+      <h3>Votos por región</h3>
+      <table id="region-votes" class="table table-bordered uniform">
+        <thead class="bg-dark text-white">
+          <tr>
+            <th scope="col">Región</th>
+            <th scope="col">Votos</th>
+          </tr>
+        </thead>
+        <tbody class="bg-white text-secondary">
+        </tbody>
+      </table>
+      <h3>Votos por festividad</h3>
+      <table id="festivity-votes" class="table table-bordered uniform">
+        <thead class="bg-dark text-white">
+          <tr>
+            <th scope="col">Festividad</th>
+            <th scope="col">Votos</th>
+          </tr>
+        </thead>
+        <tbody class="bg-white text-secondary">
+        </tbody>
+      </table>
+      <h3>Votos por platillo</h3>
+      <table id="dish-votes" class="table table-bordered uniform">
+        <thead class="bg-dark text-white">
+          <tr>
+            <th scope="col">Platillo</th>
+            <th scope="col">Votos</th>
+          </tr>
+        </thead>
+        <tbody class="bg-white text-secondary">
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <footer id="footer" class="mt-5">
+    <div class="container">
+      <div class="row d-flex flex-wrap justify-content-between py-5">
+        <div class="col-md-3 col-sm-6">
+          <div class="footer-menu footer-menu-001">
+            <div class="footer-intro mb-4">
+              <a class="navbar-brand text-black text-uppercase" href="index.html">
+                <h5>ViveMundo</h5>
+              </a>
+            </div>
+            <p>Descubre la maravilla de Ecuador: un país lleno de paisajes naturales, cultura vibrante y una historia
+              rica. Viaja con nosotros para conocer las Islas Galápagos, la Amazonía y mucho más.</p>
+            <div class="social-links">
+              <ul class="list-unstyled d-flex flex-wrap gap-3">
+                <li>
+                  <a href="#" class="text-secondary">
+                    <svg width="24" height="24" viewBox="0 0 24 24">
+                      <use xlink:href="#facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="text-secondary">
+                    <svg width="24" height="24" viewBox="0 0 24 24">
+                      <use xlink:href="#twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="text-secondary">
+                    <svg width="24" height="24" viewBox="0 0 24 24">
+                      <use xlink:href="#youtube"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="text-secondary">
+                    <svg width="24" height="24" viewBox="0 0 24 24">
+                      <use xlink:href="#pinterest"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="text-secondary">
+                    <svg width="24" height="24" viewBox="0 0 24 24">
+                      <use xlink:href="#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="footer-menu footer-menu-002">
+            <h5 class="widget-title text-uppercase mb-4">Enlaces</h5>
+            <ul class="menu-list list-unstyled text-uppercase border-animation-left fs-6">
+              <li class="menu-item">
+                <a href="index.html" class="item-anchor">Inicio</a>
+              </li>
+              <li class="menu-item">
+                <a href="index.html" class="item-anchor">Destinos</a>
+              </li>
+              <li class="menu-item">
+                <a href="index.html" class="item-anchor">Sobre Ecuador</a>
+              </li>
+              <li class="menu-item">
+                <a href="index.html" class="item-anchor">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="footer-menu footer-menu-003">
+            <h5 class="widget-title text-uppercase mb-4">Ayuda e Info</h5>
+            <ul class="menu-list list-unstyled text-uppercase border-animation-left fs-6">
+              <li class="menu-item">
+                <a href="#" class="item-anchor">Seguir tu viaje</a>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="item-anchor">Información de Viaje</a>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="item-anchor">Preguntas Frecuentes</a>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="item-anchor">Contáctanos</a>
+              </li>
+              <li class="menu-item">
+                <a href="index.html" class="item-anchor">Faqs</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="footer-menu footer-menu-004 border-animation-left">
+            <h5 class="widget-title text-uppercase mb-4">Contáctanos</h5>
+            <p>¿Tienes preguntas sobre los destinos en Ecuador o necesitas más información? <a
+                href="mailto:contact@vivemundo.com" class="item-anchor">contact@vivemundo.com</a></p>
+            <p>¿Estás listo para reservar tu aventura? Llámanos al <a href="tel:+593 999 123 456"
+                class="item-anchor">+593 999 123 456</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="border-top py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 d-flex flex-wrap">
+            <div class="shipping">
+              <span>Viaja con nosotros:</span>
+              <img src="https://cdn-icons-png.flaticon.com/512/2060/2060284.png" alt="tourism-icon"
+                style="height: 20px; width: 20px;">
+              <img
+                src="https://cdn.icon-icons.com/icons2/3224/PNG/512/passport_id_card_travel_holiday_vacation_icon_196776.png"
+                alt="flight" style="height: 20px; width: 20px;">
+            </div>
+            <div class="payment-option">
+              <span>Reserva tu viaje con:</span>
+              <img src="https://www.pngplay.com/wp-content/uploads/8/Visa-Paypal-Logo-PNG-HD-Quality.png" alt="card"
+                style="height: 20px; width: 110px;">
+            </div>
+          </div>
+          <div class="col-md-6 text-end">
+            <p>© Copyright 2024 ViveMundo. Todos los derechos reservados. Diseño por <a
+                href="https://github.com/JoseM0lina" target="_blank">josem0lina</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/SmoothScroll.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="js/script.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
