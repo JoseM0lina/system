@@ -1570,8 +1570,18 @@ a.btn-link.text-light:after {
   text-align: center;
 }
 
+#characters {
+  width: 100%;
+  height: 650px;
+  /* border-radius: 2%; */
+  object-fit: cover;
+}
+
 #identificanos {
   width: 650px;
   height: 550px;
   object-fit: cover;
+}
+.clickable-container {
+  cursor: pointer; /* Cambia el cursor a una mano */
 }

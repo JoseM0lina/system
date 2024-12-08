@@ -170,6 +170,26 @@ document.querySelector('form').addEventListener('submit', function (event) {
     });
 });
 
+document.querySelectorAll('.clickable-container').forEach(container => {
+    container.addEventListener('click', event => {
+        event.preventDefault(); // Evita el comportamiento predeterminado del enlace
+
+        const serviceId = container.id; // Obtiene el id del contenedor (ejemplo: "service-123")
+        const imageDescription = container.querySelector('img').alt; // Obtiene el alt de la imagen como descripción
+
+        if (confirm(`¿Estás seguro de que deseas solicitar el servicio: ${imageDescription}?`)) {
+            // Datos para el correo
+            const email = "gestify@gmail.com"; // Dirección del destinatario
+            const subject = encodeURIComponent(`Solicitud de Servicio - ${serviceId}`); // Asunto del correo, incluye el id
+            const body = encodeURIComponent(`Hola,\n\nQuisiera solicitar el servicio: ${imageDescription} (ID: ${serviceId}).\n\nGracias.`); // Cuerpo del correo con descripción y ID del servicio
+
+            // Redirige al esquema mailto
+            window.location.href = `mailto:${email}?subject=${subject}&body=${body}`;
+        }
+    });
+});
+
+
 // Inicializar los testimonios al cargar la página
 window.addEventListener("DOMContentLoaded", ready);
 window.addEventListener("load", loaded);
