@@ -1542,8 +1542,8 @@ a.btn-link.text-light:after {
 }
 
 .product-image {
-  width: 90%;
-  height: 450px;
+  width: 100%;
+  height: 600px;
   object-fit: cover;
   border-radius: 2%;
 }
@@ -1560,7 +1560,7 @@ a.btn-link.text-light:after {
 
 #ecuatoriano {
   width: 450px;
-  height: 550px;
+  height: 610px;
   object-fit: cover;
 }
 
@@ -1568,4 +1568,10 @@ a.btn-link.text-light:after {
   table-layout: fixed;
   width: 100%;
   text-align: center;
+}
+
+#identificanos {
+  width: 650px;
+  height: 550px;
+  object-fit: cover;
 }

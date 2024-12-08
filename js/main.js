@@ -11,7 +11,7 @@ let ready = () => {
 let loaded = ( eventLoaded ) => {
     let myform = document.getElementById('form');
     myform.addEventListener('submit', (eventSubmit) => {
-        eventSubmit.preventDefault(); 
+        eventSubmit.preventDefault();
         var emailElement = document.querySelector('.form-control-lg');
         var emailText = emailElement.value;
         if (emailText.length === 0) {
@@ -30,17 +30,17 @@ let loaded = ( eventLoaded ) => {
             )
             return;
         }
-     	sendData();        
-    })
+        sendData();        
+    });
 
 }
 
-const databaseURL = 'https://landing-2df6a-default-rtdb.firebaseio.com/data.json'; 
+const databaseURL = 'https://landing-b3136-default-rtdb.firebaseio.com/data.json'; 
 
 let sendData = () => { 
     const formData = new FormData(form);
     const data = Object.fromEntries(formData.entries());
-    data['saved'] = new Date().toLocaleString('es-CO', { timeZone: 'America/Guayaquil' })
+    data['saved'] = new Date().toLocaleString('es-CO', { timeZone: 'America/Guayaquil' });
     fetch(databaseURL, {
         method: 'POST',
         headers: {
@@ -56,7 +56,7 @@ let sendData = () => {
     })
     .then(result => {
         alert('Agradecemos tu opinión, nos mantenemos actualizados y enfocados en brindarte información importante de tu destino.');
-        form.reset()
+        form.reset();
         getData();
     })
     .catch(error => {
@@ -69,80 +69,107 @@ let getData = async () => {
         const response = await fetch(databaseURL, {
             method: 'GET'
         });
+
         if (!response.ok) {
             alert('Hemos experimentado un error en la petición del GET. ¡Vuelve pronto!');
             return;
         }
+
         const data = await response.json();
+
         if (data != null) {
-            let regionVotes = { "Costa": 0, "Sierra": 0, "Amazonía": 0, "Insular": 0 };
-            let festivityVotes = {
-                "Inti Raymi": 0, "La Mama Negra": 0, "Semana Santa": 0, "Día de los Fieles Difuntos": 0,
-                "Carnaval": 0, "Diablada del Pillaro": 0
-            };
-            let dishVotes = {
-                "Encebollado": 0, "Hornado": 0, "Yapingacho": 0, "Tigrillo": 0,
-                "Fanesca": 0, "Cazuela": 0
-            };
+            // Obtener el contenedor del testimonio
+            let testimonialsContainer = document.getElementById('testimonial-wrapper');
+            
+            // Limpiar el contenedor de testimonios antes de agregar los nuevos
+            testimonialsContainer.innerHTML = '';
+
+            // Iterar sobre los datos y agregar los testimonios
             for (let key in data) {
-                let { option1, option2, option3 } = data[key];
-                if (option1) regionVotes[option1]++;
-                if (option2) festivityVotes[option2]++;
-                if (option3) dishVotes[option3]++;
+                let entry = data[key];
+                let testimonial = entry.testimonial; // Testimonio
+                let name = entry.name; // Nombre del usuario
+                let option1 = entry.option1; // Plan seleccionado
+                let saved = entry.saved; // Fecha de guardado
+
+                // Crear el contenedor de testimonio dinámico
+                let testimonialElement = document.createElement('div');
+                testimonialElement.classList.add('swiper-slide'); // Agregar la clase para que sea un elemento del swiper
+                testimonialElement.classList.add('testimonial-item'); // Clase adicional para estilo
+
+                // Agregar el contenido del testimonio al contenedor
+                testimonialElement.innerHTML = ` 
+                    <div class="testimonial-item text-center">
+                        <blockquote>
+                            <p>"${testimonial}"</p>
+                            <div class="review-title text-uppercase">${name}</div>
+                            <div class="review-title text-uppercase">${option1}</div>
+                        </blockquote>
+                    </div>
+                `;
+
+                // Agregar el testimonio al contenedor principal
+                testimonialsContainer.appendChild(testimonialElement);
             }
-            let regionTable = document.getElementById('region-votes').getElementsByTagName('tbody')[0];
-            for (let region in regionVotes) {
-                let row = regionTable.querySelector(`tr[data-region="${region}"]`);
-                if (row) {
-                    let currentVotes = parseInt(row.querySelector('td:nth-child(2)').textContent) || 0;
-                    row.querySelector('td:nth-child(2)').textContent = currentVotes + regionVotes[region];
-                } else {
-                    let newRow = document.createElement('tr');
-                    newRow.setAttribute('data-region', region);
-                    newRow.innerHTML = `
-                        <td>${region}</td>
-                        <td>${regionVotes[region]}</td>
-                    `;
-                    regionTable.appendChild(newRow);
-                }
-            }
-            let festivityTable = document.getElementById('festivity-votes').getElementsByTagName('tbody')[0];
-            for (let festivity in festivityVotes) {
-                let row = festivityTable.querySelector(`tr[data-festivity="${festivity}"]`);
-                if (row) {
-                    let currentVotes = parseInt(row.querySelector('td:nth-child(2)').textContent) || 0;
-                    row.querySelector('td:nth-child(2)').textContent = currentVotes + festivityVotes[festivity];
-                } else {
-                    let newRow = document.createElement('tr');
-                    newRow.setAttribute('data-festivity', festivity);
-                    newRow.innerHTML = `
-                        <td>${festivity}</td>
-                        <td>${festivityVotes[festivity]}</td>
-                    `;
-                    festivityTable.appendChild(newRow);
-                }
-            }
-            let dishTable = document.getElementById('dish-votes').getElementsByTagName('tbody')[0];
-            for (let dish in dishVotes) {
-                let row = dishTable.querySelector(`tr[data-dish="${dish}"]`);
-                if (row) {
-                    let currentVotes = parseInt(row.querySelector('td:nth-child(2)').textContent) || 0;
-                    row.querySelector('td:nth-child(2)').textContent = currentVotes + dishVotes[dish];
-                } else {
-                    let newRow = document.createElement('tr');
-                    newRow.setAttribute('data-dish', dish);
-                    newRow.innerHTML = `
-                        <td>${dish}</td>
-                        <td>${dishVotes[dish]}</td>
-                    `;
-                    dishTable.appendChild(newRow);
-                }
-            }
+
+            // Después de cargar los testimonios, reiniciar Swiper
+            resetSwiper();
         }
     } catch (error) {
         alert('Hemos experimentado un error en la petición GET. ¡Vuelve pronto!');
     }
 };
 
+// Función para destruir el Swiper anterior y reiniciar el contenedor
+function resetSwiper() {
+    // Destruir la instancia del swiper si existe
+    const swiperElement = document.querySelector('.testimonial-swiper');
+    if (swiperElement && swiperElement.swiper) {
+        swiperElement.swiper.destroy(true, true); // Destruir la instancia del Swiper
+    }
+
+    // Asegurarse de que el contenedor de paginación esté vacío
+    const paginationContainer = document.querySelector('.testimonial-swiper-pagination');
+    if (paginationContainer) {
+        paginationContainer.innerHTML = '';
+    }
+
+    // Inicializar un nuevo Swiper
+    initializeSwiper();
+}
+
+// Función para inicializar el Swiper
+function initializeSwiper() {
+    new Swiper(".testimonial-swiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true, // Centra el primer testimonio
+        loop: false, // Permite el deslizamiento circular
+        slidesPerView: "auto", // Ajusta el número de slides visibles
+        coverflowEffect: {
+            fade: true,
+        },
+        pagination: {
+            el: ".testimonial-swiper-pagination", // Asegurarse que la paginación esté correctamente asignada
+            clickable: true
+        },
+        initialSlide: 0, // Asegura que el primer testimonio esté visible al inicio
+    });
+}
+
+// Manejar el envío del formulario
+document.querySelector('form').addEventListener('submit', function (event) {
+    event.preventDefault(); // Evita el comportamiento predeterminado del formulario
+
+    // Realiza lo que necesites con el formulario (guardar, validar, etc.)
+
+    // Recargar los testimonios y reiniciar el Swiper
+    getData().then(() => {
+        // Destruir la instancia del Swiper anterior y reiniciar el Swiper
+        resetSwiper();
+    });
+});
+
+// Inicializar los testimonios al cargar la página
 window.addEventListener("DOMContentLoaded", ready);
-window.addEventListener("load", loaded)
+window.addEventListener("load", loaded);
